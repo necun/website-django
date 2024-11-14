@@ -14,36 +14,36 @@
 <body>
 
     <!-- Start Header/Navigation -->
-    <nav class="custom-navbar navbar navbar-expand-md navbar-dark bg-dark" aria-label="Furni navigation bar">
-        <div class="container">
-            <a class="navbar-brand" href="{% url 'index' %}">
-                <img src="{% static 'images/ReNoteAI_logo.svg' %}" alt="ReNoteAI" class="navbar-logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarsFurni">
-                <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'index' %}">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'products' %}">Products</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'app' %}">App</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'about' %}">About us</a>
-                    </li>
-                    <li class="nav-item {% if request.path == '/contact/' %}active{% endif %}">
-                        <a class="nav-link" href="{% url 'contact' %}">Contact us</a>
-                    </li>
-                </ul>
-            </div>
+<nav class="custom-navbar navbar navbar-expand-md navbar-dark bg-dark fixed-top" aria-label="Furni navigation bar">
+    <div class="container">
+        <a class="navbar-brand" href="{% url 'index' %}">
+            <img src="{% static 'images/ReNoteAI_logo.svg' %}" alt="ReNoteAI" class="navbar-logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsFurni">
+            <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+                <li class="nav-item {% if request.path == '/' %}active{% endif %}">
+                    <a class="nav-link" href="{% url 'index' %}">Home</a>
+                </li>
+                <li class="nav-item {% if request.path == '/products/' %}active{% endif %}">
+                    <a class="nav-link" href="{% url 'products' %}">Products</a>
+                </li>
+                <li class="nav-item {% if request.path == '/app/' %}active{% endif %}">
+                    <a class="nav-link" href="{% url 'app' %}">App</a>
+                </li>
+                <li class="nav-item {% if request.path == '/about/' %}active{% endif %}">
+                    <a class="nav-link" href="{% url 'about' %}">About us</a>
+                </li>
+                <li class="nav-item {% if request.path == '/contact/' %}active{% endif %}">
+                    <a class="nav-link" href="{% url 'contact' %}">Contact us</a>
+                </li>
+            </ul>
         </div>
-    </nav>
-    <!-- End Header/Navigation -->
+    </div>
+</nav>
+
 
     <!-- Page Content -->
     {% block content %}
