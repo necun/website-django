@@ -1,0 +1,605 @@
+<!-- /*
+* Bootstrap 5
+* Template Name: Furni
+* Template Author: Untree.co
+* Template URI: https://untree.co/
+* License: https://creativecommons.org/licenses/by/3.0/
+*/ -->
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+  <!-- Start Hero Section -->
+  <div class="hero">
+    <div class="background-wrap">
+      <img src="{% static 'images/campaign_poster.png' %}" alt="ReNoteAI" class="background-wrap">
+    </div>
+    <a href="{% url 'contact' %}#contact-form" class="btn btn-secondary me-2">Book Now</a>
+    <div class="container hero-content">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-8">
+          <!-- Content here if needed -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Hero Section -->
+
+  <!-- Start Product Section -->
+  <div class="product-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-lg-3 mb-5 mb-lg-0">
+          <h2 class="mb-4 section-title">Meet ReNoteAI<br>The Smart Reusable Notebook</h2>
+          <p class="mb-4">The Smart Reusable Notebook with an AI-powered app, designed to elevate productivity sustainably. Capture handwritten notes, digitize them effortlessly, and integrate seamlessly with third-party apps for enhanced organization.</p>
+          <p><a href="{% url 'products' %}" class="btn">Explore</a></p>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+          <a class="product-item" href="{% url 'products' %}">
+            <img src="{% static 'images/Craft.png' %}" class="img-fluid product-thumbnail" style="height: 350.27px; width: 248px;">
+            <h3 class="product-title">Eco</h3>
+            <strong class="product-price">₹ 129.00</strong>
+          </a>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+          <a class="product-item" href="{% url 'products' %}">
+            <img src="{% static 'images/Lite.png' %}" class="img-fluid product-thumbnail" style="height: 350.27px; width: 232px;">
+            <h3 class="product-title">Lite</h3>
+            <strong class="product-price">₹ 199.00</strong>
+          </a>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+          <a class="product-item" href="{% url 'products' %}">
+            <img src="{% static 'images/Air.png' %}" class="img-fluid product-thumbnail" style="height: 350.27px; width: 267px;">
+            <h3 class="product-title">Air</h3>
+            <strong class="product-price">₹ 299.00</strong>
+          </a>
+        </div>
+      </div>
+
+      <!-- Feature Table -->
+      <div class="table-container">
+        <table class="custom-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Eco</th>
+              <th>Lite</th>
+              <th>Air</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>APP Compatibility</td>
+              <td>✔️</td>
+              <td>✔️</td>
+              <td>✔️</td>
+            </tr>
+            <tr>
+              <td>Eco Friendly</td>
+              <td>✔️</td>
+              <td>✔️</td>
+              <td>✔️</td>
+            </tr>
+            <tr>
+              <td>Pages</td>
+              <td>100</td>
+              <td>50</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>Book Type</td>
+              <td>Regular</td>
+              <td>Reusable</td>
+              <td>Reusable</td>
+            </tr>
+            <tr>
+              <td>Usage Times</td>
+              <td>1</td>
+              <td>Up to 100</td>
+              <td>Up to 100</td>
+            </tr>
+            <tr>
+              <td>Water Proof</td>
+              <td>❌</td>
+              <td>✔️</td>
+              <td>✔️</td>
+            </tr>
+            <tr>
+              <td>Tear Proof</td>
+              <td>❌</td>
+              <td>✔️</td>
+              <td>✔️</td>
+            </tr>
+            <tr>
+              <td>Cover Page</td>
+              <td>Craft</td>
+              <td>PP</td>
+              <td>PP</td>
+            </tr>
+            <tr>
+              <td>Pen</td>
+              <td>❌</td>
+              <td>Erasable Pen</td>
+              <td>Pilot Frixion Pen</td>
+            </tr>
+            <tr>
+              <td>Cloth</td>
+              <td>❌</td>
+              <td>❌</td>
+              <td>Micro Fiber Cloth</td>
+            </tr>
+            <tr>
+              <td>Packing</td>
+              <td>Basic</td>
+              <td>Basic</td>
+              <td>Craft Box</td>
+            </tr>
+            <tr>
+              <td>Bookmark & Scale</td>
+              <td>✔️</td>
+              <td>❌</td>
+              <td>✔️</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- End Feature Table -->
+    </div>
+  </div>
+  <!-- End Product Section -->
+
+  <!-- Start Why Choose Us Section -->
+  <div class="why-choose-section">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-lg-6">
+                <h2 class="section-title">Why Choose Our Smart Reusable Notebook ?</h2>
+                <p>Our Smart Reusable notebooks were created with the aim to satisfy all concerns regarding environmental impact and productivity, here are some key features of our products.</p>
+
+                <div class="row my-5">
+                    <div class="col-6 col-md-6">
+                        <div class="feature">
+                            <div class="icon">
+                                <img src="{% static 'images/icon tearproof.png' %}" alt="Image" class="img-fluid">
+                            </div>
+                            <h3>Non-Tearable &amp;  Waterproof</h3>
+                            <p>Our products are made with a special material which is waterproof and tearproof! </p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-6">
+                        <div class="feature">
+                            <div class="icon">
+                                <img src="{% static 'images/icon eco-friendly.png' %}" alt="Image" class="img-fluid">
+                            </div>
+                            <h3>Eco-Friendly paper</h3>
+                            <p>The paper we use for our (Eco) notebook is recycled paper which is also FSC certified. </p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-6">
+                        <div class="feature">
+                            <div class="icon">
+                                <img src="{% static 'images\icon reusable.png' %}" alt="Image" class="imf-fluid">
+                            </div>
+                            <h3>Reusable</h3>
+                            <p>You can reuse each single sheet of paper up to 100 times! </p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-6">
+                        <div class="feature">
+                            <div class="icon">
+                                <img src="{% static 'images\icon template.png' %}" alt="Image" class="imf-fluid">
+                            </div>
+                            <h3>Smart Templates</h3>
+                            <p>We’ve also included various templates like To-Do list, Meeting Schedule, and Minutes of Meeting to ease your workflow and increase your productivity! </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="img-wrap">
+                    <img src="{% static 'images/Book.jpg' %}" alt="Image" class="img-fluid">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- End Why Choose Us Section -->
+
+
+<!-- Start We Help Section -->
+<div class="we-help-section">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-lg-7 mb-5 mb-lg-0">
+                <div class="imgs-grid">
+                    <div class="grid grid-1"><img src="{% static 'images/Templates.jpg' %}"alt="Untree.co"></div>
+                    <div class="grid grid-2"><img src="{% static 'images/OCR 1.png' %}" alt="Untree.co"></div>
+                    <div class="grid grid-3"><img src="{% static 'images/mobile 1.png' %}"alt="Untree.co"></div>
+                </div>
+            </div>
+            <div class="col-lg-5 ps-lg-5">
+                <h2 class="section-title mb-4">Introducing ReNoteAI App</h2>
+                <p>Your ultimate smart note-taking app for enhanced productivity. Experience AI Chatbot assistance, Smart Templates, and seamless handwritten-to-digital conversion in one powerful workspace. Effortlessly capture, organize, and access your notes with advanced scanning and secure multi-cloud support. Unlock convenience and control over your note-taking experience today! </p>
+
+                <ul class="list-unstyled custom-list my-4">
+                    <li><strong>Smart Templates:</strong> Enhance productivity with ready-to-use templates for every task! </li>
+                    <li><strong>AI Chatbot:</strong> Your smart assistant to summarize, analyze, and elevate your notetaking effortlessly!</li>
+                    <li><strong>Auto captures</strong> your notes in an instant for seamless digitization in the App!</li>
+                    <li><strong>OCR</strong> effortlessly converts your handwritten notes into digital text with exceptional accuracy! </li>
+                </ul>
+                <p><a href="app.html" class="btn">Explore</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End We Help Section -->
+
+
+<!-- Achievements -->
+<div class="popular-product">
+    <div class="container">
+        <div class="col-lg-7 mx-auto text-center">
+            <h2 class="section-title">Our Achievements speak for itself</h2>
+        </div>
+        <div class="scrolling-container">
+            <div class="scrolling-content">
+                <div class="product-item-sm d-flex" style="margin: 10 10 10 10;">
+                    <div class="thumbnail">
+                        <img src="{% static 'images/appscale.png' %}" alt="Image" class="img-fluid" style="border-radius: 25px;">
+                    </div>
+                    <div class="pt-3">
+                        <h3>Google App Scale Academy</h3>
+                        <p>Recognized as India's one of top 100 potential business.</p>
+                        <!-- <p><a href="#">Read More</a></p> -->
+                    </div>
+                </div>
+
+                <div class="product-item-sm d-flex" style="margin: 20 20 20 20;">
+                    <div class="thumbnail">
+                        <img src="{% static 'images/meity.png' %}" alt="Image" class="img-fluid" style="border-radius: 25px;">
+                    </div>
+                    <div class="pt-3">
+                        <h3>MEITY Startup Hub</h3>
+                        <p>Recognized by Ministry of Electronics <b></b><br> and Information Technology.</p>
+                        <!-- <p><a href="#">Read More</a></p> -->
+                    </div>
+                </div>
+
+                <!-- Repeat product items for continuous effect -->
+                <div class="product-item-sm d-flex" style="margin: 10 10 10 10;">
+                    <div class="thumbnail">
+                        <img src="{% static 'images/Thub.jpg' %}" alt="Image" class="img-fluid" style="border-radius: 25px;">
+                    </div>
+                    <div class="pt-3">
+                        <h3>T-Hub</h3>
+                        <p>Incubated with World's Largest Innovation Campus <b></b><br> with wide opportunity of Global Reach.</p>
+                        <!-- <p><a href="#">Read More</a></p> -->
+                    </div>
+                </div>
+
+                <div class="product-item-sm d-flex" style="margin: 10 10 10 10;">
+                    <div class="thumbnail">
+                        <img src="{% static 'images/cii.png' %}" alt="Image" class="img-fluid" style="border-radius: 25px;">
+                    </div>
+                    <div class="pt-3">
+                        <h3>CII CIES</h3>
+                        <p>Member of Confederation of Indian Industry.</p>
+                        <!-- <p><a href="#">Read More</a></p> -->
+                    </div>
+                </div>
+
+                <div class="product-item-sm d-flex" style="margin: 10 10 10 10;">
+                    <div class="thumbnail">
+                        <img src="{% static 'images/micro.png' %}" alt="Image" class="img-fluid" style="border-radius: 25px;">
+                    </div>
+                    <div class="pt-3">
+                        <h3>Microsoft</h3>
+                        <p>Part of Microsoft Founder’s Hub.</p>
+                        <!-- <p><a href="#">Read More</a></p> -->
+                    </div>
+                </div>
+
+
+                <div class="product-item-sm d-flex" style="margin: 10 10 10 10;">
+                    <div class="thumbnail">
+                        <img src="{% static 'images/Nvidai.png' %}" alt="Image" class="img-fluid" style="border-radius: 25px;">
+                    </div>
+                    <div class="pt-3">
+                        <h3>Nvidia Inception Program</h3>
+                        <p>Part of an elite group of startups accepted by Nvidia <b></b><br> to build our products and make a difference.</p>
+                        <!-- <p><a href="#">Read More</a></p> -->
+                    </div>
+                </div>
+
+
+                <div class="product-item-sm d-flex" style="margin: 10 10 10 10;">
+                    <div class="thumbnail">
+                        <img src="{% static 'images/meity.png' %}" alt="Image" class="img-fluid" style="border-radius: 25px;">
+                    </div>
+                    <div class="pt-3">
+                        <h3>AIC</h3>
+                        <p>Associated with over 132 Atal Incubation Centers across India.</p>
+                        <p><a href="#">Read More</a></p>
+                    </div>
+                </div>
+
+                <div class="product-item-sm d-flex" style="margin: 10 10 10 10;">
+                    <div class="thumbnail">
+                        <img src="{% static 'images/AIC.png' %}" alt="Image" class="img-fluid" style="border-radius: 25px;">
+                    </div>
+                    <div class="pt-3">
+                        <h3>AIC</h3>
+                        <p>Associated with over 132 Atal Incubation Centers across India.</p>
+                        <p><a href="#">Read More</a></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--End Achievemewnts-->
+
+
+
+
+<!-- Start Testimonial Slider -->
+<div class="testimonial-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 mx-auto text-center">
+                <h2 class="section-title">Testimonials</h2>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <div class="testimonial-slider-wrap text-center">
+
+                    <div id="testimonial-nav">
+                        <span class="prev" data-controls="prev"><span class="fa fa-chevron-left"></span></span>
+                        <span class="next" data-controls="next"><span class="fa fa-chevron-right"></span></span>
+                    </div>
+
+                    <div class="testimonial-slider">
+                        
+                        <div class="item">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8 mx-auto">
+
+                                    <div class="testimonial-block text-center">
+                                        <blockquote class="mb-5">
+                                            <p>&ldquo;A big shoutout to ReNoteAI for the wonderful gift and what an awesome product.  
+                                                The smart reusable notebook is such a big relief from the overpriced and over sensitive gadgets like ipad and remarkable.  
+                                                In less than 24hrs, i am hooked to it.  
+                                                A regular writing device which satisfies the exercise needs of my fingers and wrist while keeping the mind agile by staying in the writing flow without tech interference. &rdquo;</p>
+                                        </blockquote>
+
+                                        <div class="author-info">
+                                            <!-- <div class="author-pic">
+                                                <img src="images/person-1.png" alt="Amita Vikram Pratap" class="img-fluid">
+                                            </div> -->
+                                            <h3 class="font-weight-bold">Amita Vikram Pratap</h3>
+                                            <span class="position d-block mb-3">Co Founder – MAV Brand Stories LLC</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div> 
+                        <!-- END item -->
+
+                        <!-- <div class="item">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8 mx-auto">
+
+                                    <div class="testimonial-block text-center">
+                                        <blockquote class="mb-5">
+                                            <p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque.&rdquo;</p>
+                                        </blockquote>
+
+                                        <div class="author-info">
+                                            <div class="author-pic">
+                                                <img src="images/person-1.png" alt="Maria Jones" class="img-fluid">
+                                            </div>
+                                            <h3 class="font-weight-bold">Maria Jones</h3>
+                                            <span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>  -->
+                        <!-- END item -->
+
+                        <!-- <div class="item">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8 mx-auto">
+
+                                    <div class="testimonial-block text-center">
+                                        <blockquote class="mb-5">
+                                            <p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque.&rdquo;</p>
+                                        </blockquote>
+
+                                        <div class="author-info">
+                                            <div class="author-pic">
+                                                <img src="images/person-1.png" alt="Maria Jones" class="img-fluid">
+                                            </div>
+                                            <h3 class="font-weight-bold">Maria Jones</h3>
+                                            <span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>  -->
+                        <!-- END item -->
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Testimonial Slider -->
+
+
+<!-- Start Blog Section -->
+<div class="blog-section">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-md-6">
+                <h2 class="section-title">Our Product out in the world!</h2>
+            </div>
+            <div class="col-md-6 text-start text-md-end">
+                <a href="https://www.linkedin.com/company/renoteai/posts/?feedView=all" class="more" target="_blank">View All Posts</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+                <div class="post-entry">
+                    <a href="https://www.linkedin.com/posts/renoteai_globalaisummit-renoteai-aiinnovation-activity-7237387130526728192-wuY6?utm_source=share&utm_medium=member_desktop" class="post-thumbnail" target="_blank">
+                        <img src="{% static 'images/AI SUMMIT.jpg' %}" alt="Image" class="img-fluid">
+                    </a>
+                    <div class="post-content-entry">
+                        <h3><a>Global AI Summit at Hyderabad</a></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+                <div class="post-entry">
+                    <a href="https://www.linkedin.com/posts/renoteai_renoteai-gitex2024-smartsustainableworld-activity-7257722929835094016-X6as?utm_source=share&utm_medium=member_desktop" class="post-thumbnail" target="_blank">
+                        <img src="{% static 'images/gitex.jpg' %}" alt="ReNote AI at GITEX Global 2024" class="img-fluid">
+                    </a>
+                    <div class="post-content-entry">
+                        <h3><a>ReNote AI at GITEX Global 2024!</a></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+                <div class="post-entry">
+                    <a href="https://www.linkedin.com/posts/renoteai_ices2024-indiacsrandesgsummit2024-sustainability-activity-7252929908190978048-It8J?utm_source=share&utm_medium=member_desktop" class="post-thumbnail" target="_blank">
+                        <img src="{% static 'images/CSR Delhi.jpg' %}" alt="Image" class="img-fluid" style="width: 100%; height: 100%;">
+                    </a>
+                    <div class="post-content-entry">
+                        <h3><a>India CSR & ESG Summit 2024</a></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+                <div class="post-entry">
+                    <a href="https://www.linkedin.com/posts/renoteai_bangaloreexpansion-renoteai-giftsworldexpo2024-activity-7233767274350796800-wJw4?utm_source=share&utm_medium=member_desktop" class="post-thumbnail" target="_blank">
+                        <img src="{% static 'images/bengaluru_expo.jpg' %}" alt="Image" class="img-fluid">
+                    </a>
+                    <div class="post-content-entry">
+                        <h3><a>Gifts World Expo 2024 at Bangalore</a></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+                <div class="post-entry">
+                    <a href="https://www.linkedin.com/posts/renoteai_sustainability-renoteai-ecofriendly-activity-7230812292840366080-cMs5?utm_source=share&utm_medium=member_desktop" class="post-thumbnail" target="_blank">
+                        <img src="{% static 'images/exo_sustain.jpg' %}" alt="Image" class="img-fluid">
+                    </a>
+                    <div class="post-content-entry">
+                        <h3><a>Eco Sustain Expo 2024 at Hyderabad</a></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+                <div class="post-entry">
+                    <a href="https://www.linkedin.com/posts/renoteai_renoteai-giftsexpodelhi-b2b-activity-7224333647363915776-e2G1?utm_source=share&utm_medium=member_desktop" class="post-thumbnail" target="_blank">
+                        <img src="{% static 'images/delhi_expo.jpg' %}" alt="Image" class="img-fluid">
+                    </a>
+                    <div class="post-content-entry">
+                        <h3><a>Gifts World Expo 2024 at Delhi</a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Blog Section -->
+
+
+
+
+{% endblock %}
+
+  <!-- Footer -->
+  <footer class="footer-section">
+    <div class="container relative">
+      <div class="row g-5 mb-5 align-items-center">
+        <!-- Contact Info -->
+        <div class="col-lg-4 footer-logo-wrap">
+          <a href="{% url 'index' %}" class="footer-logo">ReNoteAI</a>
+          <p class="mb-4">ReNote AI Pvt Ltd, T-Hub Phase 2.0, Madhapur, Hyderabad, Telangana, India - 500081.<br>+91 9666363363, +91 8886663326<br>info@renote.ai</p>
+          <ul class="list-unstyled custom-social">
+            <li><a href="https://www.facebook.com/people/ReNote-AI/61568234070306/" target="_blank"><span class="fab fa-facebook-f"></span></a></li>
+            <li><a href="https://x.com/ReNote_AI?t=65Ubm8s6UJ5NUM2dsBmEcg&s=09" target="_blank"><span class="fab fa-twitter"></span></a></li>
+            <li><a href="https://www.instagram.com/renote.ai?igsh=MTZpNnUwOHpzZTF2cA==" target="_blank"><span class="fab fa-instagram"></span></a></li>
+            <li><a href="https://www.linkedin.com/company/renoteai/" target="_blank"><span class="fab fa-linkedin"></span></a></li>
+        </ul>
+        
+        </div>
+        
+        <!-- App Links -->
+        <div class="col-lg-4 text-center">
+          <h5>Download Our App</h5>
+          <a href="https://play.google.com/store/apps/details?id=com.renote" target="_blank">
+            <img src="{% static 'images/playstore_logo.png' %}" alt="Get it on Google Play" style="width: 200px; margin: 9px;">
+          </a>
+          <a href="https://apps.apple.com/in/app/renoteai/id6479944118" target="_blank">
+            <img src="{% static 'images/appstore_logo.png' %}" alt="Download on the App Store" style="width: 200px; margin: 9px;">
+          </a>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="col-lg-4 links-wrap text-end">
+          <ul class="list-unstyled">
+            <li><a href="{% url 'products' %}">Products</a></li>
+            <li><a href="{% url 'app' %}">App</a></li>
+            <li><a href="{% url 'about' %}">About Us</a></li>
+            <li><a href="{% url 'contact' %}">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-top copyright">
+        <div class="row pt-4">
+          <div class="col-lg-6">
+            <p class="mb-2 text-center text-lg-start">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved.</p>
+          </div>
+          <div class="col-lg-6 text-center text-lg-end">
+            <ul class="list-unstyled d-inline-flex ms-auto">
+              <li class="me-4"><a href="#" style="font-size:15px">Terms & Conditions</a></li>
+              <li><a href="#" style="font-size:15px">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer Section -->
+
+  <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'js/tiny-slider.js' %}"></script>
+  <script src="{% static 'js/custom.js' %}"></script>
+</body>
+</html>
