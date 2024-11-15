@@ -30,8 +30,8 @@
                 <li class="nav-item {% if request.path == '/products/' %}active{% endif %}">
                     <a class="nav-link" href="{% url 'products' %}">Products</a>
                 </li>
-                <li class="nav-item {% if request.path == '/app/' %}active{% endif %}">
-                    <a class="nav-link" href="{% url 'app' %}">App</a>
+                <li class="nav-item {% if request.path == '/welcome/' %}active{% endif %}">
+                    <a class="nav-link" href="{% url 'welcome' %}">App</a>
                 </li>
                 <li class="nav-item {% if request.path == '/about/' %}active{% endif %}">
                     <a class="nav-link" href="{% url 'about' %}">About us</a>
@@ -50,7 +50,7 @@
     {% endblock %}
 
     <!-- Footer -->
-<footer class="footer-section">
+<footer class="footer-section" id="footer-section">
     <div class="container relative">
         <div class="sofa-img">
             <img src="{% static 'images/Waterbowlcopy.png' %}" alt="Image" class="img-fluid" style="padding-left: 50px;">
@@ -59,7 +59,7 @@
         <div class="row g-5 mb-5 align-items-center">
             <!-- Contact Info -->
             <div class="col-lg-4 footer-logo-wrap">
-                <a href="{% url 'index' %}" class="footer-logo">ReNoteAI<span>.</span></a>
+                <a href="{% url 'index' %}" class="footer-logo">ReNoteAI</a>
                 <p class="mb-4">
                     ReNote AI Pvt Ltd,<br>
                     T-Hub Phase 2.0, Madhapur,<br>
@@ -90,7 +90,7 @@
             <div class="col-lg-4 links-wrap text-end">
                 <ul class="list-unstyled">
                     <li><a href="{% url 'products' %}">Products</a></li>
-                    <li><a href="{% url 'app' %}">App</a></li>
+                    <li><a href="{% url 'welcome' %}">App</a></li>
                     <li><a href="{% url 'about' %}">About Us</a></li>
                     <li><a href="{% url 'contact' %}">Contact us</a></li>
                 </ul>

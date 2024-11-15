@@ -7,7 +7,7 @@ def index(request):
 def products(request):
     return render(request, 'products.html')
 
-def app(request):
+def welcome(request):
     return render(request, 'app.html')
 
 def about(request):
