@@ -2,6 +2,8 @@ from django.urls import path
 
 from . import views
 
+handler404 = 'pages.views.custom_404'
+
 urlpatterns = [
     path('', views.index, name='index'),
     path('products/', views.products, name='products'),

@@ -31,3 +31,6 @@ def privacy_policy(request):
 
 def terms(request):
     return render(request, 'terms.html')
+
+def custom_404(request, exception):
+    return render(request, '404.html', status=404)
