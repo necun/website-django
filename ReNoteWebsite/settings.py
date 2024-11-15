@@ -41,6 +41,9 @@ INSTALLED_APPS = [
     "pages"
 ]
 
+STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
 
@@ -54,6 +57,7 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'  # Directory to collect static files
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
@@ -63,6 +67,9 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = "ReNoteWebsite.urls"
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 
 
 
