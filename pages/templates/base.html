@@ -145,13 +145,21 @@
     </noscript>
 
     <!-- WhatsApp Floating Icon -->
-    <a href="https://wa.me/+918886663326" target="_blank" class="whatsapp-float">
+    {% comment %} <a href="https://wa.me/+918886663326" target="_blank" class="whatsapp-float">
         <img src="{% static 'images/whatsapp.svg' %}" alt="WhatsApp" class="whatsapp-icon">
-    </a>
+    </a> {% endcomment %}
 
-    <a href="{% url 'contact' %}#contact-form" class="booknow-float">
+    {% comment %} <a href="{% url 'contact' %}#contact-form" class="booknow-float">
         <img src="{% static 'images/booking.png' %}" alt="BookNow" class="booknow-icon">
-    </a>
-
+    </a> {% endcomment %}
+    <script type='module'>
+        import startBizbot from 'https://widget.wisemelon.ai/plugin.js';
+        window.botId =  '67b70a6d7893e3450f710bd9'; 
+        window.productName = 'Wisemelon';
+        window.baseUrl = 'https://api.wisemelon.ai';
+        window.isOpenChat = false;
+        startBizbot();
+    </script>
 </body>
+
 </html>
